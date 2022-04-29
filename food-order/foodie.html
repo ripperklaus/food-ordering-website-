@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="foodie.css">
+  <link rel="stylesheet" href="foodie1.css">
+  
+  <link href="file:///Users/udityanshupandey/Desktop/html/foodie.com/register.html">
+  <title>Responsive Website!</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+      <nav class="menu">
+          <button aria-expanded="false" aria-controls="menu-list">
+            <span class="open">☰</span>
+            <span class="close">×</span>
+            Menu
+          </button>
+          <ul id="menu-list">
+            <li>
+            
+                <a href="momos.html" target="blank">ORDER HERE </a>
+             
+            </li>
+            
+            <li>
+              <a href="register.html">signin
+                
+              </a>
+             
+            </li>
+          </ul>
+        </nav>
+    <div class="top">
+      <header class="hero">
+        <h1> Shake It up</h1>
+        <p>welcome to Shake House</p>
+        <img src="https://b.zmtcdn.com/data/pictures/chains/7/102977/14bcfc85bcb1f77fdad942ff4f2da00b.jpg" alt=""
+        width="500" height="300">
+      </header>
+      <div class="cta cta1">
+        <p class="price">199</p>
+        <p>classic shakes</p>
+      </div>
+      <div class="cta cta2">
+        <p class="price">399</p>
+        <p>thick shakes</p>
+      </div>
+
+    </div>
+
+    <section class="features">
+      <div class="feature">
+        <span class="icon">🥤</span>
+        <h3>choco chips</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+        <link href="file:///Users/udityanshupandey/Desktop/html/foodie.com/momos.html">
+      </div>
+      <div class="feature">
+        <span class="icon">🥤</span>
+        <h3>kit-kat</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🥤</span>
+        <h3>melting rose</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+      <div class="feature">
+        <span class="icon">🥤</span>
+        <h3>caramello</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+      </div>
+    </section>
+
+    <section class="about">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2AeoTF-KzIRlALRNPmgS43CR3QPoQXPF_9Q&usqp=CAU" alt="Yummy Taco" class="about__mockup" >
+      <div class="about__details">
+        <h2>shake House</h2>
+        <p>since 1950</p>
+        <p>This is the one you have been waiting for</p>
+        <button>Learn More →</button>
+      </div>
+      <li>
+        <a href="contactus1.html">contact us
+          
+        </a>
+       
+      </li>
+    </section>
+
+
+    <section class="gallery">
+      <h2>Instant Grams</h2>
+      <img src="https://source.unsplash.com/random/201x201" alt="">
+      <img src="https://source.unsplash.com/random/202x202" alt="">
+      <img src="https://source.unsplash.com/random/203x203" alt="">
+      <img src="https://source.unsplash.com/random/204x204" alt="">
+      <img src="https://source.unsplash.com/random/205x205" alt="">
+      <img src="https://source.unsplash.com/random/206x206" alt="">
+      <img src="https://source.unsplash.com/random/207x207" alt="">
+      <img src="https://source.unsplash.com/random/207x208" alt="">
+      <img src="https://source.unsplash.com/random/207x209" alt="">
+      <img src="https://source.unsplash.com/random/207x210" alt="">
+    </section>
+  </div>
+
+  <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+
+</body>
+
+</html>
+
